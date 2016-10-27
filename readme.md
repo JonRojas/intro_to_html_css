@@ -6,7 +6,6 @@
   - Know which content goes in the head
   - know which content goes in the body
 - Explain how CSS is used for styling
-- Link a style sheet to HTML
 - utilize common HTML tags/elements
 - understand how selectors work in css
 - utilize common css properties
@@ -288,6 +287,11 @@ img{
 ```
 
 > If the dimensions you write for this rule aren't the same ratio as the original image, your image will be warped. Additionally. You can specify the heigh and width of any element in an HTML page as well.
+
+### CSS - You do
+Look at [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+Try and utilize 5 or more properties from the list in the above link in your web application
 
 ### Questions?
 
