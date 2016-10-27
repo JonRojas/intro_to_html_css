@@ -6,9 +6,9 @@
   - Know which content goes in the head
   - know which content goes in the body
 - Explain how CSS is used for styling
-- utilize common HTML tags/elements
-- understand how selectors work in css
-- utilize common css properties
+- Utilize common HTML tags/elements
+- Explain how selectors work in css
+- Utilize common css properties
 
 ## Let's get to know each other!()
 - Introduce yourself!
