@@ -10,17 +10,16 @@
 - utilize common HTML tags/elements
 - understand how selectors work in css
 - utilize common css properties
-- deploy static site using bitballoon
 
 ## Let's get to know each other!()
 - Introduce yourself!
   1. Name
   2. Where you're from
   3. What you do
-  4. Which superhero would you be and why
+  4. If you got stuck in the elevator coming up to the 8th floor, what would you talk about?
 
 ## Opening Framing()
-HTML and CSS is at the crux of everything that we do as web developers. Whether it's leveraging HTML using advanced frontend frameworks/libraries or simple static content.
+HTML and CSS is at the crux of everything that we do as web developers. Whether it's leveraging HTML using advanced front-end frameworks/libraries or simple static content.
 
 ## Hyper Text Markup Language()
 Let's first talk about Hyper Text Markup Language. HTML is a cornerstone technology, used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. HTML establishes a structure for the website and marks up the content to provide semantic meaning.
@@ -215,11 +214,6 @@ That's it for HTML!
 
 > We've just barely scratching surfaces in this class. If you'd like more information about HTML check out these [docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-## Fresh Prince - You do
-We definitely haven't gone over all of the elements used in this exercise, but use your best intuition to make educated guesses.
-
-[Fresh Prince Exercise](https://github.com/ga-wdi-exercises/belair_biography)
-
 ## Cascading Style Sheets
 Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. There's so much to learn about CSS. If you're interested, there are many different resources out there!(check the bottom of the lesson plan for them!)
 
@@ -303,25 +297,6 @@ img{
 Look at [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 Try and utilize 5 or more properties from the list in the above link in your web application
-
-### Bitballoon
-- sign up for an account
-- drag and drop your folder and your site is hosted!
-- share your site in disposable chat!
-
-### Moar CSS
-If time allows:
-- border
-- margin
-- padding
-- color
-- font-family
-- height
-- width
-- html classes/id's for selectors
-- linking to another page in your directory
-
-
 
 ### Documentation
 [HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
