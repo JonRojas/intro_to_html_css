@@ -24,36 +24,34 @@ HTML and CSS is at the crux of everything that we do as web developers. Whether 
 ## Hyper Text Markup Language()
 Let's first talk about Hyper Text Markup Language. HTML is a cornerstone technology, used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. HTML establishes a structure for the website and marks up the content to provide semantic meaning.
 
-Let's take a look at a popular [website](http://www.google.com). I'm sure most everyone's familiar with google, but I want to show you this web page in a different light.  I'm going to open the Developer tools, I do this by hitting `cmd` & `option` & `i`(`Ctrl` & `Shift` & `i`- for PC) on the keyboard.
+Let's take a look at the small website known as  [Google](http://www.google.com). I'm sure most everyone's familiar with google, but I want to show you this web page in a different light.  I'm going to open the Developer tools, I do this by hitting `cmd` & `option` & `i`(`Ctrl` & `Shift` & `i`- for PC) on the keyboard.
 
-The first thing I want to do, is just click on the tab that says `Elements` in the dev tools. When we click this, we see something that, to be honest, scares me. Oh em gee `class onload try{if(!google.k.b)} data catch new Image src`. What does it all mean?! Believe it or not, what you see is all of the HTML for this page of the web application. HTML can get pretty complex, but let's look at what it's doing at its core.
+The first thing I want to do, is just click on the tab that says `Elements` in the dev tools. When we click this, we see something that, to be honest, scares me. Oh boy... `class onload try{if(!google.k.b)} data catch new Image src`. What does it all mean?! Believe it or not, what you see is all of the HTML for this page of the web application. HTML can get pretty complex, but let's look at what it's doing at its core.
 
- In the top left of the dev tools(if you're using chrome), you'll see and icon that is a box with a mouse cursor in the middle of it. I'm going to use this tool to inspect some elements in the HTML. Specifically, I'm going to click on the webpage where it says `Images` in the top right.
+ In the top left of the dev tools (if you're using chrome), you'll see and icon that is a box with a mouse cursor in the middle of it. I'm going to use this tool to inspect some elements in the HTML. Specifically, I'm going to click on the webpage where it says `Images` in the top right.
 
 ```html
 <a class="gb_P" href="https://www.google.com/imghp?hl=en&amp;tab=wi&amp;authuser=0&amp;ei=alyWVqL6OMjXeYflrKAL&amp;ved=0EKouCBQoAQ" data-pid="2">Images</a>
 ```
 
-(ST - WG) What can you see is the same in the webpage as the code you see here.
+What you see is the same in the webpage as the code you see here.
 
 `Images`!! At the end of the day, HTML is just content.
 
-Let's make some HTML!
-> for windows users, you can use notepad, for mac users you can use text edit. Alternatively, if you have Sublime, that would be best.
+**Let's make some HTML!**
 
-1. First thing you should do is create a folder on your desktop called `my_first_website`
-2. Next open your text editor(sublime, notepad, textedit, etc..)
-3. Create a new file and save the file as `index.html` in the `my_first_website` folder you created before.
-
-> These lasts steps are pretty important to follow along with the class! So make sure you get with an instructor to be at the right place.
+1. First thing you should do is open Google Chrome on your computer.
+2. Next, go to [Codepen](http://http://codepen.io/)
+3. Click on the `+New Pen` button in the upper right of the page.
+4. Give me a thumbs up if you see what is up on the screen.
 
 Before we start writing HTML. I want to give you a general overview of how we write it. Essentially it boils down to HTML elements that are called `tags` and contents that go inside of them. Sometimes it will be other tags, other times it will be text that wants to be displayed in your web page. We'll be going over only *some* of the tags today. I encourage you to investigate others and how they work.
 
-> Also note, that I will be coding an "Intro to HTML and CSS" website, but you're free to make up your own content instead of using the content I'm providing! Maybe, a site about puppies, Starwars or pterodactyls with laser beams for eyes.
+> Also note, that I will be coding an "Intro to HTML and CSS" website, but you're free to make up your own content instead of using the content I'm providing! Maybe, a site about puppies, Star Wars or pterodactyls with laser beams for eyes.
 
 ### The Head
 
-Let's start writing some `html`. In the `index.html` file we've created:
+Let's start writing some `html`. In the HTML section, let write:
 
 ```html
 <!DOCTYPE html>
@@ -63,7 +61,7 @@ Let's start writing some `html`. In the `index.html` file we've created:
 
 > `<!DOCTYPE html>` is a document type declaration for HTML 5. The `<html>` tags are the delimiters of our web pages content. Everything we write in HTML today will be inside of the `<html>` tags.
 
-If we open this file in the browser. We see ... absolutely nothing.
+If we look at the display below, we see... absolutely nothing.
 
 Let's talk about the head.
 
@@ -76,7 +74,7 @@ Let's talk about the head.
 </html>
 ```
 
-Again, nothing's changed. What kind of information do you think would go in the head? (ST-WG)
+Again, nothing's changed. What kind of information do you think would go in the head?
 
 ```html
 <!DOCTYPE html>
@@ -87,7 +85,7 @@ Again, nothing's changed. What kind of information do you think would go in the 
 </html>
 ```
 
-If we look in our browser this time, something has changed! What is it?
+If we look at the display this time, something has changed! What is it?
 
 > It's often a misconception from people that do not code to assume what goes in the head is the stuff at the top of a web page. In reality, the `head` tag contains meta data. Things like, stylesheets, scripts, character sets, language encoding and other sorts of things like that. The `title` element gives our page a title and can be important for SEO. Additionally, looks at the chrome tab in your browser window!
 
@@ -110,7 +108,7 @@ Finally let's add some actual content. This will go in the `body` tag.
 </html>
 ```
 
-Open in browser, congratulations! We've made our first site with actual content!
+Congratulations! We've made our first site with actual content!
 
 > Here we're using an `h1` tag which is one of 6 heading tags(`h1` through `h6`). Add an `h2` to the document, what's different about the h2 and h1? One is bigger than the other. With regard to HTML the size difference has no bearing on the *semantic* difference. The idea is that `h1`s are more important headings than `h2`s. The size difference is coming from default CSS styles for those headers. Additionally, we're also using a `<p>` tag which semantically identifies the content within as a "paragraph"
 
@@ -162,13 +160,11 @@ Let's add some main content to our webpage. We'll be using the `<main>`.
 
 > The only new element we've added is the `img` tag. Couple of new things for this tag. We'll be using an attribute for the first time. There are alot of use cases for attributes in HTML elements, this is just one of them. The `src` attribute provides where the image is coming from. Another thing to note is that `<img>` is a self closing tag.
 
-In order to create an image of a personal picture of yours. Place the picture that you'd like in your webpage in the *same* directory as that of you `index.html`(your webpage). Then link to it in the src with just the files name eg.:
+In order to create an image of a personal picture of yours, replace the image source with your own link. (If you don't have one, we can use this pic of a puppy! Everyone loves puppies.)
 
 ```html
-<img src="my_pic.jpg">
+<img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
 ```
-
-> Computers are VERY specific, so make sure you have capitalization correctly. Additionally it has trouble with white spaces, so you may want to rename the picture such that its all lower case with no spaces like in the example above.
 
 ### The Footer
 
@@ -193,7 +189,7 @@ Let's add some footer content to it. We'll be using the `<footer>` tag.
       <img src='http://www.ilmuwebsite.com/wp-content/uploads/2014/05/html.jpg'>
     </main>
     <footer>
-      <a href='https://www.facebook.com/mdndev'>Contact MDN on facebook!</a>
+      <a href='https://www.twitter.com/jonrojas'>Contact me on Twitter!</a>
     </footer>
   </body>
 </html>
@@ -202,7 +198,7 @@ Let's add some footer content to it. We'll be using the `<footer>` tag.
 > The anchor tag(`<a>`) is used to create links to other sites. It has an attribute `href`. Whatever is in quotes after the `href=` is the link that it will go to. You can even place an `<img>` tag inside of an anchor, so that the image will be a clickable image that sends you to a link!
 
 ### HTML - you do
-Using the `<section>` tag. Create another part of your website. It might contain things like:
+Using the `<section>` tag (after your `<main>` tag), create another part of your website. It might contain things like:
 
 - headings(`h1` - `h6`)
 - paragraphs
@@ -224,13 +220,13 @@ The basic idea of CSS is to select some HTML element and then do something to it
 ### First Steps
 Create a new file and save the file as `styles.css` in the `my_first_website` folder you created before. We now need to link this stylesheet to our web application.
 
-In the `<head></head>` tags of your `index.html` add a `link` element like this:
+Typically, in the `<head></head>` tags of your `index.html` add a `link` element like this:
 
 ```html
 <link rel="stylesheet" href="styles.css">
 ```
 
-Let's see if it worked by adding this next bit of code to our `styles.css`
+BUT, we are using Codepen so we don't have to do that! You can enter your `CSS` code in the CSS section.
 
 ```css
 body{
@@ -238,13 +234,13 @@ body{
 }
 ```
 
-whoa! cool!
+YES! Cool.
 
 Everything's super blue, but how? Lets breakdown what we just wrote.
 
 The entirety of what we wrote is known as a CSS rule. It's comprised of a couple of component parts.
 
-The first being, the selector. In this case, `body`. In a nutshell when we write:
+The first being, the selector. In this case, the selector is `body`. In a nutshell when we write:
 
 ```css
 body{
@@ -262,7 +258,7 @@ background: blue;
 
 Above is an example of one. You can have multiple declarations in a single rule. Each declaration consists of a property and value. In the declaration above, `background` is the property and `blue` is the value. Declarations are always ended with a `;`
 
-Another issue is that blue, is super ugly. Let pick a much nicer color using [Color Picker](http://www.color-hex.com/)
+Another issue is that blue, is not the most pleasing shade of blue. Let pick a much nicer color using [Color Picker](http://www.color-hex.com/)
 
 ```
 body{
@@ -277,7 +273,7 @@ Add another body selector, add a declaration to change the color to a different 
 
 Which one was applied to the body? blue? or the new color?
 
-(ST - WG) What can we insinuate about cascading based on what we've seen.
+What does this mean? What is it telling you
 
 > Although CSS rules are applied in a cascade like effect, there is something that supercedes that. It is CSS specificity. If you'd like to know more about CSS specificity check this [link](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
@@ -292,3 +288,7 @@ img{
 ```
 
 > If the dimensions you write for this rule aren't the same ratio as the original image, your image will be warped. Additionally. You can specify the heigh and width of any element in an HTML page as well.
+
+### Questions?
+
+## There you go. You've technically made your first website!
